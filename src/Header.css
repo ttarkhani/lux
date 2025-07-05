@@ -1,0 +1,73 @@
+.lux-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;               /* No side padding needed */
+  background: #fff;
+  color: #000;
+  border-bottom: 2px solid #000;
+  top: 0;
+  z-index: 100;
+  max-width: 80vw;               /* Take up 80% of the screen width */
+  margin: 0 auto;                /* Center it horizontally */
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+
+
+.lux-nav {
+  flex: 1;
+}
+
+.lux-nav-link {
+  margin-right: 1.5rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.lux-title {
+  flex: 2;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.lux-title-link {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lux-cart {
+  flex: 1;
+  text-align: right;
+}
+
+.lux-cart-link {
+  color: #000;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.lux-cart-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.lux-header,
+.lux-nav-link,
+.lux-cart-link {
+  font-family: 'Playfair Display', serif;
+}
+
+.lux-title, .lux-title-link {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+}
+

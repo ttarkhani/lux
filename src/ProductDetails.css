@@ -1,0 +1,125 @@
+.product-detail-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 60vh;
+  padding: 3rem 2rem 2rem 2rem;
+  background: #fff;
+}
+
+.product-detail-card {
+  display: flex;
+  gap: 3rem;
+  max-width: 1200px;
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 32px 0 #00000011;
+  padding: 2.5rem 2rem;
+}
+
+.product-image-box {
+  flex: 0 0 340px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+}
+
+.product-image-box img {
+  max-width: 300px;
+  max-height: 410px;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.product-info-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-top: 1rem;
+}
+
+.product-info-box h1 {
+  font-size: 2.2rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.product-info-box .desc {
+  color: #3a3a3a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.7rem;
+}
+
+.product-info-box .price {
+  font-size: 1.4rem;
+  color: #7a53c0;
+  font-weight: bold;
+  margin: 1rem 0 1.2rem 0;
+}
+
+.select-row {
+  margin-bottom: 1rem;
+}
+
+.select-row label {
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.select-row select {
+  padding: 0.4rem 1.1rem;
+  border-radius: 6px;
+  border: 1px solid #e1e1e1;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.add-cart-btn {
+  padding: 0.7rem 2.2rem;
+  font-size: 1.1rem;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 14px 0 #0001;
+  transition: background 0.18s;
+}
+.add-cart-btn:hover {
+  background: #7a53c0;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .product-detail-card {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1.2rem;
+  }
+  .product-image-box {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .product-image-box img {
+    max-width: 230px;
+    max-height: 340px;
+  }
+  .product-info-box {
+    padding-top: 0.2rem;
+    width: 100%;
+  }
+}

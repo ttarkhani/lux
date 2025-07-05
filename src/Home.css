@@ -1,0 +1,158 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 900px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 7vw;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: #fff;
+  color: #111;
+  padding: 0.7rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+.hero-btn:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* Parallax Background Sections */
+.parallax-section {
+  position: relative;
+  width: 100vw;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.4);
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.model2-bg {
+  background-image: url('/model2.jpg');
+}
+
+.model3-bg {
+  background-image: url('/model3.jpg');
+}
+
+/* Content styling for parallax section */
+.parallax-content {
+  background: rgba(0,0,0,0.3);
+  padding: 2rem 3rem;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.parallax-section h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.parallax-section p {
+  font-size: 1.25rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.collections-section {
+  padding: 3rem 0 2rem 0;
+  background: #fff;
+  height: 85vh;
+}
+
+.collections-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.collections-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.collection-card {
+  background: #f8f8f8;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+  overflow: hidden;
+  width: 320px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.collection-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.13);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+}
+
+.collection-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #222;
+  padding: 1rem 0;
+  background: #fff;
+}
