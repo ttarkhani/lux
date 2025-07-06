@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <title>Redirecting...</title>
-    <script>
-      location.replace('/lux/');
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      const path = window.location.pathname.replace('/lux', '');
+      window.location.replace('/lux/' + (path || ''));
     </script>
+    <title>Redirecting...</title>
   </head>
   <body>
     <p>Redirecting...</p>
