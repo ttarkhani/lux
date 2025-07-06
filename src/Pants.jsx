@@ -7,25 +7,25 @@ const pants = [
     id: "chino",
     name: "Navy Chino",
     price: 99,
-    img: "/pants1.jpg"
+    img: `${import.meta.env.BASE_URL}pants1.jpg`
   },
   {
     id: "wool",
     name: "Grey Wool Pant",
     price: 129,
-    img: "/pants2.jpg"
+    img: `${import.meta.env.BASE_URL}pants2.jpg`
   },
   {
     id: "slim",
     name: "Black Slim Pant",
     price: 119,
-    img: "/pants3.jpg"
+    img: `${import.meta.env.BASE_URL}pants3.jpg`
   },
   {
     id: "beige",
     name: "Beige Dress Pant",
     price: 109,
-    img: "/pants4.jpg"
+    img: `${import.meta.env.BASE_URL}pants4.jpg`
   }
 ];
 
@@ -51,3 +51,4 @@ function Pants() {
 }
 
 export default Pants;
+

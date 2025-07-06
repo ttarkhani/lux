@@ -7,25 +7,25 @@ const ties = [
     id: "navy-tie",
     name: "Navy Silk Tie",
     price: 49,
-    img: "/ties1.jpg"
+    img: `${import.meta.env.BASE_URL}ties1.jpg`
   },
   {
     id: "burgundy",
     name: "Burgundy Tie",
     price: 59,
-    img: "/ties2.jpg"
+    img: `${import.meta.env.BASE_URL}ties2.jpg`
   },
   {
     id: "stripes",
     name: "Striped Tie",
     price: 39,
-    img: "/ties3.jpg"
+    img: `${import.meta.env.BASE_URL}ties3.jpg`
   },
   {
     id: "gray-tie",
     name: "Gray Wool Tie",
     price: 54,
-    img: "/ties4.jpg"
+    img: `${import.meta.env.BASE_URL}ties4.jpg`
   }
 ];
 

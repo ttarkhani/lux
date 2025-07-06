@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PRODUCTS } from "./ProductData.js"; 
+import { PRODUCTS } from "./ProductData.js";
 import "./Suits.css";
 
 function Shoes() {
@@ -25,3 +25,4 @@ function Shoes() {
 }
 
 export default Shoes;
+

@@ -7,25 +7,25 @@ const suits = [
     id: "navy",
     name: "Classic Navy Suit",
     price: "$499.00",
-    img: "/suit1.jpg"
+    img: `${import.meta.env.BASE_URL}suit1.jpg`
   },
   {
     id: "charcoal",
     name: "Charcoal Slim Suit",
     price: "$539.00",
-    img: "/suit2.jpg"
+    img: `${import.meta.env.BASE_URL}suit2.jpg`
   },
   {
     id: "tuxedo",
     name: "Midnight Tuxedo",
     price: "$789.00",
-    img: "/suit3.png"
+    img: `${import.meta.env.BASE_URL}suit3.png`
   },
   {
     id: "ivory",
     name: "Ivory Summer Suit",
     price: "$629.00",
-    img: "/suit4.jpg"
+    img: `${import.meta.env.BASE_URL}suit4.jpg`
   }
 ];
 
@@ -42,7 +42,7 @@ function Suits() {
           >
             <img src={item.img} alt={item.name} />
             <div className="item-name">{item.name}</div>
-            <div className="item-price">${item.price}</div>
+            <div className="item-price">{item.price}</div>
           </Link>
         ))}
       </div>
@@ -51,3 +51,4 @@ function Suits() {
 }
 
 export default Suits;
+

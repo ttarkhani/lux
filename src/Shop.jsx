@@ -52,7 +52,6 @@ const Shop = ({ addToCart }) => {
           ))}
         </select>
 
-        {/* Optional size selector */}
         <select value={size} onChange={handleSizeChange}>
           <option value="">Select Size</option>
           {sizeOptions.map(s => <option key={s} value={s}>{s}</option>)}
@@ -80,4 +79,5 @@ const Shop = ({ addToCart }) => {
 };
 
 export default Shop;
+
 
