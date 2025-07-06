@@ -1,4 +1,3 @@
-/* Hero Section */
 .hero-section {
   position: relative;
   width: 100vw;
@@ -55,7 +54,6 @@
   color: #fff;
 }
 
-/* Parallax Background Sections */
 .parallax-section {
   position: relative;
   width: 100vw;
@@ -65,7 +63,7 @@
   justify-content: center;
   color: #fff;
   text-shadow: 0 3px 12px rgba(0,0,0,0.4);
-  background-attachment: fixed; /* Parallax effect */
+  background-attachment: fixed; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -79,7 +77,6 @@
   background-image: url('/model3.jpg');
 }
 
-/* Content styling for parallax section */
 .parallax-content {
   background: rgba(0,0,0,0.3);
   padding: 2rem 3rem;

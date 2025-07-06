@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import "./ProductDetails.css"; 
-import { PRODUCTS } from "./ProductData"; 
+import "./ProductDetails.css";
+import { PRODUCTS } from "./ProductData";
 
 const categoryMap = {
   suits: PRODUCTS.suits,
@@ -12,15 +12,23 @@ const categoryMap = {
 
 const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
-function ProductDetails() {
+function ProductDetails({ addToCart }) {
   const { productId } = useParams();
   const path = window.location.pathname.split("/");
   const category = path[1];
   const product = categoryMap[category]?.find((p) => p.id === productId);
 
-  const [size, setSize] = useState("S");
+  const [size, setSize] = useState("M");
 
   if (!product) return <div className="not-found">Product not found.</div>;
+
+  const handleAddToCart = () => {
+    addToCart({
+      ...product,
+      size,
+    });
+    alert("Added to cart!");
+  };
 
   return (
     <div className="product-detail-main">
@@ -34,18 +42,14 @@ function ProductDetails() {
           <div className="price">${product.price}.00</div>
           <div className="select-row">
             <label htmlFor="size">Size:</label>
-            <select
-              id="size"
-              value={size}
-              onChange={(e) => setSize(e.target.value)}
-            >
+            <select id="size" value={size} onChange={(e) => setSize(e.target.value)}>
               <option value="S">S</option>
               <option value="M">M</option>
               <option value="L">L</option>
               <option value="XL">XL</option>
             </select>
           </div>
-          <button className="add-cart-btn">Add to Cart</button>
+          <button className="add-cart-btn" onClick={handleAddToCart}>Add to Cart</button>
         </div>
       </div>
     </div>
@@ -53,3 +57,4 @@ function ProductDetails() {
 }
 
 export default ProductDetails;
+

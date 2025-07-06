@@ -2,7 +2,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="lux-footer">
+    <footer id="footer" className="lux-footer"> {/* 👈 Added id here */}
       <div className="footer-container">
         <div className="footer-col">
           <h5>Help</h5>
@@ -49,3 +49,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

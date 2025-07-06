@@ -7,8 +7,8 @@
 }
 
 .container {
-  max-width: 80vw;   /* or 1200px for a fixed pixel width */
-  margin: 0 auto;    /* centers it horizontally */
+  max-width: 80vw;   
+  margin: 0 auto;    
   width: 100%;
   box-sizing: border-box;
 }
