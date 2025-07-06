@@ -19,7 +19,7 @@ const Header = () => (
     <div className="lux-cart">
       <Link to="/cart" className="cart-link" title="Cart">
         <img
-          src="cart.png"
+          src={`${import.meta.env.BASE_URL}cart.png`}
           alt="Cart"
           style={{ width: "30px", height: "30px", objectFit: "contain" }}
         />

@@ -6,7 +6,7 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <div className="hero-section">
-        <img src="model.jpg" alt="Lux Model" className="hero-img" />
+        <img src={`${import.meta.env.BASE_URL}model.jpg`} alt="Lux Model" className="hero-img" />
         <div className="hero-overlay">
           <h2 className="hero-title">See Our Full Collection</h2>
           <Link to="/shop" className="hero-btn">Explore All</Link>
@@ -34,19 +34,19 @@ const Home = () => {
         <h2 className="collections-title">Shop by Collection</h2>
         <div className="collections-grid">
           <Link to="/suits" className="collection-card">
-            <img src="suits.jpg" alt="Suits" />
+            <img src={`${import.meta.env.BASE_URL}suits.jpg`} alt="Suits" />
             <div className="collection-label">Suits</div>
           </Link>
           <Link to="/shoes" className="collection-card">
-            <img src="shoes.jpg" alt="Shoes" />
+            <img src={`${import.meta.env.BASE_URL}shoes.jpg`} alt="Shoes" />
             <div className="collection-label">Shoes</div>
           </Link>
           <Link to="/ties" className="collection-card">
-            <img src="ties.jpg" alt="Ties" />
+            <img src={`${import.meta.env.BASE_URL}ties.jpg`} alt="Ties" />
             <div className="collection-label">Ties</div>
           </Link>
           <Link to="/pants" className="collection-card">
-            <img src="pants.jpg" alt="Pants" />
+            <img src={`${import.meta.env.BASE_URL}pants.jpg`} alt="Pants" />
             <div className="collection-label">Pants</div>
           </Link>
         </div>
@@ -56,3 +56,4 @@ const Home = () => {
 };
 
 export default Home;
+
