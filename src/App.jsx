@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <Router basename="/lux/">
+    <Router basename="/lux">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
